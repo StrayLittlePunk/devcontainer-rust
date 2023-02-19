@@ -4,7 +4,6 @@ apt-get install -y \
   curl \
   git \
   jq \
-  sudo \
   zsh \
   vim \
   build-essential \
@@ -12,13 +11,13 @@ apt-get install -y \
 
 ## Install rustup and common components
 curl https://sh.rustup.rs -sSf | sh -s -- -y 
-rustup install nightly
-rustup component add rustfmt
-rustup component add rustfmt --toolchain nightly
-rustup component add clippy 
-rustup component add clippy --toolchain nightly
-
 cargo install cargo-expand
+
+## install golang
+curl -sSfLO https://dl.google.com/go/go1.20.1.linux-amd64.tar.gz
+ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.1.linux-amd64.tar.gz
+ export PATH=$PATH:/usr/local/go/bin
+ go version
 
 ## setup and install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
