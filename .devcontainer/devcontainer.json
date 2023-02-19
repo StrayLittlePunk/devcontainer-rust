@@ -20,5 +20,5 @@
 			}
 		}
 	},
-	"dockerFile": "Dockerfile",
+	"dockerFile": "Dockerfile"
 }
