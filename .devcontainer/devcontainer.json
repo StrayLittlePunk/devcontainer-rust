@@ -12,20 +12,21 @@
 					}
 				},
 				"terminal.integrated.defaultProfile.linux": "zsh",
+				"terminal.integrated.shell.linux": "/usr/bin/zsh",
 				"files.exclude": {
 					"**/CODE_OF_CONDUCT.md": true,
 					"**/LICENSE": true
-				},
-				"extensions": [
-					"golang.Go",
-					"cschleiden.vscode-github-actions",
-					"rust-lang.rust-analyzer",
-					"tamasfe.even-better-toml",
-					"serayuzgur.crates",
-					"vadimcn.vscode-lldb",
-					"vscodevim.vim"
-				]
-			}
+				}
+			},
+			"extensions": [
+				"golang.Go",
+				"cschleiden.vscode-github-actions",
+				"rust-lang.rust-analyzer",
+				"tamasfe.even-better-toml",
+				"serayuzgur.crates",
+				"vadimcn.vscode-lldb",
+				"vscodevim.vim"
+			]
 		}
 	},
 	"dockerFile": "Dockerfile"

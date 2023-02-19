@@ -6,4 +6,5 @@ COPY . .
 
 RUN bash ./setup.sh
 
-ENV PATH="/root/.cargo/bin:$PATH"
+ENV PATH="/root/.cargo/bin:/usr/local/go/bin:$PATH"
+SHELL ["/usr/bin/zsh"]
